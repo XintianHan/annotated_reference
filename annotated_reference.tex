@@ -1,0 +1,104 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{palatino}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+%\usepackage{geometry}
+\usepackage{listings}
+\usepackage{amsmath,amsthm}
+\usepackage{extpfeil}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{mathptmx}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{dsfont}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{claim}{Claim}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{fact}{Fact}
+\title{Annotated Reference}
+\author{Han Xintian}
+\begin{document}
+\maketitle
+\section{Adversarial Examples}
+\subsection{Adversarial Attacks}
+\subsubsection{LBFGS Attack}
+\textbf{Intriguing properties of neural networks}\cite{szegedy2013intriguing}. Given an image $x$, L-BFGS tries to find a different image $x'$ that is close to $x$. They solve the following constrained problem to find $x'$:
+\begin{align*}
+\min & \quad \|x-x'\|_2^2\\
+s.t. & \quad C(x') = l\\
+     & \quad x'\in [0,1]^n,	
+\end{align*}
+where $l$ is the target label. The original problem is hard to solve. They solve the following problem instead.
+\begin{align*}
+\min &\quad c\cdot \|x-x'\|_2^2+\text{loss}_{F,l}(x')\\
+s.t. &\quad x' \in [0,1]^n,	
+\end{align*}
+where loss function $\text{loss}_{F,l}$ is a function that maps an image to a positive label $l$, for example, cross-entropy loss. It aims to perform targeted attack.
+\subsubsection{Fast Gradient Sign Method (FSGM)}
+\textbf{Explaining and Harnessing Adversarial Examples} \cite{goodfellow2014explaining}.
+FSGM is a fast algorithm. It will not produce very close adversarial examples. Given an image $x$, FSGM sets
+\[
+x' = x- \varepsilon \cdot \text{sign}(\nabla \text{loss}_{F,t}(x)),
+\]
+where $\varepsilon$ is chosen to be sufficiently small so as to be undetectable, and $t$ is the target label. An improved version is Iterative Gradient Sign. Begin by setting $x_0' = x$, we have 
+\[
+x_i' = Clip_{x,\varepsilon}\{x_{i-1}'+\alpha \text{sign}(\nabla_{F,t}(x_{i-1}')) \}
+\]
+It is an untargeted attack.
+\subsubsection{JSMA}
+\textbf{The limitations of deep learning in adversarial settings}\cite{papernot2016limitations}.
+JSMA is short for Jacobian-based Saliency Map Attack. It is still a gradient based attack. They use the gradient $\nabla Z(x)_l$ to compute a saliency map, which models the impact each pixel has on the resulting classification. They choose selected number of pixels changing which will make the target class more likely and other classes less likely.
+\subsubsection{Deepfool}
+\textbf{Deepfool: a simple and accurate method to fool deep neural networks}\cite{madry2017towards}.
+They image the neural network are generally linear with a hyperplane separating each class from another. They create adversarial examples for this simplified problem and use these examples to attack neural network. They use the adversarial examples to attack another classifier.
+\subsubsection{Carlini's $l_0$, $l_2$ and $l_{\infty}$ Attack}
+\textbf{Defensive distillation is not robust to adversarial examples} \cite{carlini2016towards}. The Carlini's attack mainly solve the problem:
+\begin{align*}
+\min &\quad \mathcal{D}(x,x+\delta)\\
+s.t. &\quad C(x+\delta) = t \\
+& \quad x+\delta \in [0,1]^n	
+\end{align*}
+Here, $\mathcal{D}$ could be $l_0$, $l_2$ or $l_{\infty}$. They define the objective function $f$ such that $C(x+\delta)=t$ if and only if $f(x+\delta) \leq 0$. When they find $f$, they tries to minimize 
+\begin{align*}
+\min & \quad \mathcal{D}(x,x+\delta) +c\cdot f(x+\delta)\\
+s.t. & \quad x+\delta \in [0,1]^n	
+\end{align*}
+LBFGS is a special case of this method.
+
+\subsection{Defense Methods}
+\subsubsection{Adversarial Training}
+\textbf{Towards Deep Learning Models Resistant to Adversarial Attacks} \cite{madry2017towards}.
+Defense method over all first order attack? Adversarial training over projected gradient method. Adversarial training over projected gradient method will also be robust to other first order attack method. None first order attack are hard to reach by a first order method even restarting randomly.
+
+Other findings: 1. Large capacity network is more robust. The loss value decreases after adversarial training.
+\subsection{Other}
+\subsubsection{Sensitivity and generalization in neural networks\cite{novak2018sensitivity}}
+Empirically show that smaller generation gap corresponds to lower sensitivity. Use frobenius norm of the Jacobian and number of transitions (curvature of the functions) to characterize sensitivity. Create close to manifold datasets and off manifolds datasets. Close to manifolds datasets by combination of digits from the same class. Off manifolds by random inputs and combination of digits from different class.
+\section{Explanation}
+
+\bibliographystyle{plain}
+\bibliography{bibfile}
+
+\end{document}
+
+
+
+
+
+
+
+
+
