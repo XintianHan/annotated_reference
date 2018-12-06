@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{carlini2016towards}
+Nicholas Carlini and David Wagner.
+\newblock Towards evaluating the robustness of neural networks.
+\newblock {\em arXiv preprint arXiv:1608.04644}, 2016.
+
+\bibitem{garg2018spectral}
+Shivam Garg, Vatsal Sharan, Brian Zhang, and Gregory Valiant.
+\newblock A spectral view of adversarially robust features.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  10158--10168, 2018.
+
+\bibitem{goodfellow2014explaining}
+Ian~J Goodfellow, Jonathon Shlens, and Christian Szegedy.
+\newblock Explaining and harnessing adversarial examples.
+\newblock {\em arXiv preprint arXiv:1412.6572}, 2014.
+
+\bibitem{madry2017towards}
+Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and
+  Adrian Vladu.
+\newblock Towards deep learning models resistant to adversarial attacks.
+\newblock {\em arXiv preprint arXiv:1706.06083}, 2017.
+
+\bibitem{novak2018sensitivity}
+Roman Novak, Yasaman Bahri, Daniel~A Abolafia, Jeffrey Pennington, and Jascha
+  Sohl-Dickstein.
+\newblock Sensitivity and generalization in neural networks: an empirical
+  study.
+\newblock {\em arXiv preprint arXiv:1802.08760}, 2018.
+
+\bibitem{papernot2016limitations}
+Nicolas Papernot, Patrick McDaniel, Somesh Jha, Matt Fredrikson, Z~Berkay
+  Celik, and Ananthram Swami.
+\newblock The limitations of deep learning in adversarial settings.
+\newblock In {\em Security and Privacy (EuroS\&P), 2016 IEEE European Symposium
+  on}, pages 372--387. IEEE, 2016.
+
+\bibitem{papernot2016distillation}
+Nicolas Papernot, Patrick McDaniel, Xi~Wu, Somesh Jha, and Ananthram Swami.
+\newblock Distillation as a defense to adversarial perturbations against deep
+  neural networks.
+\newblock In {\em 2016 IEEE Symposium on Security and Privacy (SP)}, pages
+  582--597. IEEE, 2016.
+
+\bibitem{schmidt2018adversarially}
+Ludwig Schmidt, Shibani Santurkar, Dimitris Tsipras, Kunal Talwar, and
+  Aleksander M{\k{a}}dry.
+\newblock Adversarially robust generalization requires more data.
+\newblock {\em arXiv preprint arXiv:1804.11285}, 2018.
+
+\bibitem{sinha2018certifying}
+Aman Sinha, Hongseok Namkoong, and John Duchi.
+\newblock Certifying some distributional robustness with principled adversarial
+  training.
+\newblock 2018.
+
+\bibitem{szegedy2013intriguing}
+Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan,
+  Ian Goodfellow, and Rob Fergus.
+\newblock Intriguing properties of neural networks.
+\newblock {\em arXiv preprint arXiv:1312.6199}, 2013.
+
+\end{thebibliography}

@@ -20,7 +20,7 @@
 \usepackage{cite}
 \usepackage{url}
 \usepackage{dsfont}
-
+\usepackage[T1]{fontenc}
 \newtheorem{proposition}{Proposition}
 \newtheorem{definition}{Definition}
 \newtheorem{corollary}{Corollary}
@@ -79,14 +79,23 @@ s.t. & \quad x+\delta \in [0,1]^n
 LBFGS is a special case of this method.
 
 \subsection{Defense Methods}
+\subsubsection{Distillation}
+\textbf{Distillation as a defense to adversarial perturbations against deep neural networks} \cite{papernot2016distillation}. Introduce a method that raises the temperature in training to $T$ in the $\exp(X/T)$ and set $T=1$ when testing. It is a method to hide the gradient and could be attacked by \cite{carlini2016towards}.
 \subsubsection{Adversarial Training}
 \textbf{Towards Deep Learning Models Resistant to Adversarial Attacks} \cite{madry2017towards}.
 Defense method over all first order attack? Adversarial training over projected gradient method. Adversarial training over projected gradient method will also be robust to other first order attack method. None first order attack are hard to reach by a first order method even restarting randomly.
 
 Other findings: 1. Large capacity network is more robust. The loss value decreases after adversarial training.
+\subsubsection{Wasserstein Adversarial Training}
+\textbf{Certifying Some Distributional Robustness with Principled Adversarial Training\cite{sinha2018certifying}}. Develops theoretical bounds for perturbation in the Wasserstein neighborhood and find minimax classifier using Augmented Lagrangian.
 \subsection{Other}
 \subsubsection{Sensitivity and generalization in neural networks\cite{novak2018sensitivity}}
 Empirically show that smaller generation gap corresponds to lower sensitivity. Use frobenius norm of the Jacobian and number of transitions (curvature of the functions) to characterize sensitivity. Create close to manifold datasets and off manifolds datasets. Close to manifolds datasets by combination of digits from the same class. Off manifolds by random inputs and combination of digits from different class.
+\subsubsection{Adversarially Robust Generalization Requires More Data \cite{schmidt2018adversarially}}
+The paper explains lower bounds on the minimax objective function for adversarial adversarial examples (minimum over all the parameters and maximum  over all the perturbations) for Gaussian distribution and Bernoulli distribution data. They find that for Gaussian distributed data, all the learning algorithms have a constant minimax loss lower bound but for the Bernoulli distributed dataset only linear algorithms have a lower bound. The lower bound is suitable for nonlinear algorithms. They believe MNIST is like Bernoulli distribution dataset so it does not have a lower bound when using nonliner classifiers like neural network.
+\subsubsection{A Spectral View of Adversarially Robust Features \cite{garg2018spectral}}
+They demonstrate the importance of learning adversarial robust features from spectral graph theory. They build a graph on distances between two images and use the second eigenvector of the graph Laplacian matrix to be a robust feature.
+
 \section{Explanation}
 
 \bibliographystyle{plain}
