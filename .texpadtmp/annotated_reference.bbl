@@ -5,6 +5,11 @@ Nicholas Carlini and David Wagner.
 \newblock Towards evaluating the robustness of neural networks.
 \newblock {\em arXiv preprint arXiv:1608.04644}, 2016.
 
+\bibitem{feinman2017detecting}
+Reuben Feinman, Ryan~R Curtin, Saurabh Shintre, and Andrew~B Gardner.
+\newblock Detecting adversarial samples from artifacts.
+\newblock {\em arXiv preprint arXiv:1703.00410}, 2017.
+
 \bibitem{garg2018spectral}
 Shivam Garg, Vatsal Sharan, Brian Zhang, and Gregory Valiant.
 \newblock A spectral view of adversarially robust features.

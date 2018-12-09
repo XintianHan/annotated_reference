@@ -95,7 +95,8 @@ Empirically show that smaller generation gap corresponds to lower sensitivity. U
 The paper explains lower bounds on the minimax objective function for adversarial adversarial examples (minimum over all the parameters and maximum  over all the perturbations) for Gaussian distribution and Bernoulli distribution data. They find that for Gaussian distributed data, all the learning algorithms have a constant minimax loss lower bound but for the Bernoulli distributed dataset only linear algorithms have a lower bound. The lower bound is suitable for nonlinear algorithms. They believe MNIST is like Bernoulli distribution dataset so it does not have a lower bound when using nonliner classifiers like neural network.
 \subsubsection{A Spectral View of Adversarially Robust Features \cite{garg2018spectral}}
 They demonstrate the importance of learning adversarial robust features from spectral graph theory. They build a graph on distances between two images and use the second eigenvector of the graph Laplacian matrix to be a robust feature.
-
+\subsubsection{Detecting Adversarial Samples from Artifacts\cite{feinman2017detecting}}
+We investigate model confidence on adversarial samples by looking at Bayesian uncertainty estimates, available in dropout neural networks, and by performing density estimation in the subspace of deep features learned by the model.
 \section{Explanation}
 
 \bibliographystyle{plain}
