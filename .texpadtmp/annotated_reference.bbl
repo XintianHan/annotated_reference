@@ -5,6 +5,11 @@ Nicholas Carlini and David Wagner.
 \newblock Towards evaluating the robustness of neural networks.
 \newblock {\em arXiv preprint arXiv:1608.04644}, 2016.
 
+\bibitem{chen2018neural}
+Tian~Qi Chen, Yulia Rubanova, Jesse Bettencourt, and David Duvenaud.
+\newblock Neural ordinary differential equations.
+\newblock {\em arXiv preprint arXiv:1806.07366}, 2018.
+
 \bibitem{feinman2017detecting}
 Reuben Feinman, Ryan~R Curtin, Saurabh Shintre, and Andrew~B Gardner.
 \newblock Detecting adversarial samples from artifacts.
@@ -27,6 +32,11 @@ Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and
 \newblock Towards deep learning models resistant to adversarial attacks.
 \newblock {\em arXiv preprint arXiv:1706.06083}, 2017.
 
+\bibitem{martens2013explaining}
+David Martens and Foster Provost.
+\newblock Explaining data-driven document classifications.
+\newblock 2013.
+
 \bibitem{novak2018sensitivity}
 Roman Novak, Yasaman Bahri, Daniel~A Abolafia, Jeffrey Pennington, and Jascha
   Sohl-Dickstein.
@@ -47,6 +57,12 @@ Nicolas Papernot, Patrick McDaniel, Xi~Wu, Somesh Jha, and Ananthram Swami.
   neural networks.
 \newblock In {\em 2016 IEEE Symposium on Security and Privacy (SP)}, pages
   582--597. IEEE, 2016.
+
+\bibitem{ranganath2014black}
+Rajesh Ranganath, Sean Gerrish, and David Blei.
+\newblock Black box variational inference.
+\newblock In {\em Artificial Intelligence and Statistics}, pages 814--822,
+  2014.
 
 \bibitem{schmidt2018adversarially}
 Ludwig Schmidt, Shibani Santurkar, Dimitris Tsipras, Kunal Talwar, and

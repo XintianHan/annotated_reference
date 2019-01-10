@@ -3,54 +3,55 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/xintianhan/Downloads/annotated_reference/.texpadtmp/annotated_reference.aux
 The style file: plain.bst
 Database file #1: ../bibfile.bib
-Repeated entry---line 148 of file ../bibfile.bib
+Repeated entry---line 159 of file ../bibfile.bib
  : @article{sinha2018certifying
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 154 of file ../bibfile.bib
+Repeated entry---line 165 of file ../bibfile.bib
  : @article{feinman2017detecting
  :                              ,
 I'm skipping whatever remains of this entry
+Warning--empty journal in martens2013explaining
 Warning--empty journal in sinha2018certifying
-You've used 11 entries,
+You've used 14 entries,
             2118 wiz_defined-function locations,
-            549 strings with 6362 characters,
-and the built_in function-call counts, 4239 in all, are:
-= -- 398
-> -- 278
-< -- 3
-+ -- 111
-- -- 98
-* -- 294
-:= -- 727
-add.period$ -- 35
-call.type$ -- 11
-change.case$ -- 82
+            561 strings with 6769 characters,
+and the built_in function-call counts, 5262 in all, are:
+= -- 496
+> -- 332
+< -- 4
++ -- 132
+- -- 116
+* -- 356
+:= -- 895
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 100
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 153
-empty$ -- 266
-format.name$ -- 98
-if$ -- 867
+cite$ -- 16
+duplicate$ -- 196
+empty$ -- 341
+format.name$ -- 116
+if$ -- 1083
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 93
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 73
+num.names$ -- 28
+pop$ -- 116
 preamble$ -- 1
-purify$ -- 71
+purify$ -- 86
 quote$ -- 0
-skip$ -- 118
+skip$ -- 153
 stack$ -- 0
-substring$ -- 169
-swap$ -- 44
-text.length$ -- 3
+substring$ -- 216
+swap$ -- 56
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
-warning$ -- 1
-while$ -- 31
-width$ -- 13
-write$ -- 116
+type$ -- 56
+warning$ -- 2
+while$ -- 40
+width$ -- 16
+write$ -- 146
 (There were 2 error messages)

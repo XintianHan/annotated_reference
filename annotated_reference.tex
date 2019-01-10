@@ -92,13 +92,27 @@ Other findings: 1. Large capacity network is more robust. The loss value decreas
 \subsubsection{Sensitivity and generalization in neural networks\cite{novak2018sensitivity}}
 Empirically show that smaller generation gap corresponds to lower sensitivity. Use frobenius norm of the Jacobian and number of transitions (curvature of the functions) to characterize sensitivity. Create close to manifold datasets and off manifolds datasets. Close to manifolds datasets by combination of digits from the same class. Off manifolds by random inputs and combination of digits from different class.
 \subsubsection{Adversarially Robust Generalization Requires More Data \cite{schmidt2018adversarially}}
-The paper explains lower bounds on the minimax objective function for adversarial adversarial examples (minimum over all the parameters and maximum  over all the perturbations) for Gaussian distribution and Bernoulli distribution data. They find that for Gaussian distributed data, all the learning algorithms have a constant minimax loss lower bound but for the Bernoulli distributed dataset only linear algorithms have a lower bound. The lower bound is suitable for nonlinear algorithms. They believe MNIST is like Bernoulli distribution dataset so it does not have a lower bound when using nonliner classifiers like neural network.
+The paper explains lower bounds on the minimax objective function for adversarial adversarial examples (minimum over all the parameters and maximum  over all the perturbations) for Gaussian distribution and Bernoulli distribution data. They find that for Gaussian distributed data, all the learning algorithms have a constant minimax loss lower bound but for the Bernoulli distributed dataset only linear algorithms have a lower bound. The lower bound is suitable for nonlinear algorithms. They believe MNIST is like Bernoulli distribution dataset so it does not have a lower bound when using nonlinear classifiers like neural network.
 \subsubsection{A Spectral View of Adversarially Robust Features \cite{garg2018spectral}}
 They demonstrate the importance of learning adversarial robust features from spectral graph theory. They build a graph on distances between two images and use the second eigenvector of the graph Laplacian matrix to be a robust feature.
 \subsubsection{Detecting Adversarial Samples from Artifacts\cite{feinman2017detecting}}
 We investigate model confidence on adversarial samples by looking at Bayesian uncertainty estimates, available in dropout neural networks, and by performing density estimation in the subspace of deep features learned by the model.
 \section{Explanation}
+\subsection{Instance Explanation}
+\subsubsection{	
+Explaining data-driven document classifications \cite{martens2013explaining}}
+Find minimal set of words that will change the decision of an instance for document classification problems.
+\section{Differential Equations and Deep Learning}
+\subsection{Neural ODE \cite{chen2018neural}}
+Turn discrete ResNet, normalizing flow, RNN into continuous ODE and update parameters from a black box ODE solver.
+\section{Inference}
+\subsection{Black Box Variational Inference\cite{ranganath2014black}}
+Inference: estimate parameter and calculate posterior distribution on the new data point. Usually needs to take a lot of complex expectations (Integral).
 
+Black Box: Only need to evaluate the probability but not the expectation.
+\section{Generative Model}
+\subsection{Knockoff GAN}
+Create a novel discriminator to generate knock-off examples using GAN.
 \bibliographystyle{plain}
 \bibliography{bibfile}
 
