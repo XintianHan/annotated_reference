@@ -1,57 +1,57 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: /Users/xintianhan/Downloads/annotated_reference/.texpadtmp/annotated_reference.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/hanxintian/Documents/annotated_reference/.texpadtmp/annotated_reference.aux
 The style file: plain.bst
 Database file #1: ../bibfile.bib
-Repeated entry---line 159 of file ../bibfile.bib
+Repeated entry---line 174 of file ../bibfile.bib
  : @article{sinha2018certifying
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 165 of file ../bibfile.bib
+Repeated entry---line 180 of file ../bibfile.bib
  : @article{feinman2017detecting
  :                              ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in martens2013explaining
 Warning--empty journal in sinha2018certifying
-You've used 14 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            561 strings with 6769 characters,
-and the built_in function-call counts, 5262 in all, are:
-= -- 496
-> -- 332
-< -- 4
-+ -- 132
-- -- 116
-* -- 356
-:= -- 895
-add.period$ -- 44
-call.type$ -- 14
-change.case$ -- 100
+            573 strings with 7220 characters,
+and the built_in function-call counts, 6089 in all, are:
+= -- 580
+> -- 368
+< -- 6
++ -- 146
+- -- 128
+* -- 408
+:= -- 1019
+add.period$ -- 51
+call.type$ -- 16
+change.case$ -- 111
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 196
-empty$ -- 341
-format.name$ -- 116
-if$ -- 1083
+cite$ -- 18
+duplicate$ -- 233
+empty$ -- 407
+format.name$ -- 128
+if$ -- 1269
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 14
-newline$ -- 73
-num.names$ -- 28
-pop$ -- 116
+int.to.str$ -- 16
+missing$ -- 17
+newline$ -- 83
+num.names$ -- 32
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 96
 quote$ -- 0
-skip$ -- 153
+skip$ -- 181
 stack$ -- 0
-substring$ -- 216
-swap$ -- 56
-text.length$ -- 4
+substring$ -- 266
+swap$ -- 71
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 62
 warning$ -- 2
-while$ -- 40
-width$ -- 16
-write$ -- 146
+while$ -- 47
+width$ -- 18
+write$ -- 169
 (There were 2 error messages)

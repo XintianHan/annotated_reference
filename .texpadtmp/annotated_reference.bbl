@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{arjovsky2016unitary}
+Martin Arjovsky, Amar Shah, and Yoshua Bengio.
+\newblock Unitary evolution recurrent neural networks.
+\newblock In {\em Proceedings of the 33rd International Conference on
+  International Conference on Machine Learning-Volume 48}, pages 1120--1128.
+  JMLR. org, 2016.
+
 \bibitem{carlini2016towards}
 Nicholas Carlini and David Wagner.
 \newblock Towards evaluating the robustness of neural networks.
@@ -25,6 +32,12 @@ Shivam Garg, Vatsal Sharan, Brian Zhang, and Gregory Valiant.
 Ian~J Goodfellow, Jonathon Shlens, and Christian Szegedy.
 \newblock Explaining and harnessing adversarial examples.
 \newblock {\em arXiv preprint arXiv:1412.6572}, 2014.
+
+\bibitem{hairer2006geometric}
+Ernst Hairer, Christian Lubich, and Gerhard Wanner.
+\newblock {\em Geometric numerical integration: structure-preserving algorithms
+  for ordinary differential equations}, volume~31.
+\newblock Springer Science \& Business Media, 2006.
 
 \bibitem{madry2017towards}
 Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and
